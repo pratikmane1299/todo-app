@@ -1,0 +1,35 @@
+.title {
+    text-align: center;
+    margin-top: 25px;
+}
+
+input, button, label {
+    display: block;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    width: 100%;
+}
+
+input[type='checkbox'] {
+    display: inline;
+    width: auto;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.remove-todo-btn {
+    display: inline-block;
+    width: auto;
+}
