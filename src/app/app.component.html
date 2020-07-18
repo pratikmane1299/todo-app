@@ -1,10 +1,5 @@
 <h1 class="title">Todo App</h1>
-<form (ngSubmit)="addTodo()">
-  <label>Todo</label>
-  <input type="text" name="todo" id="todo" [(ngModel)]="todo" />
-  <button>add todo</button>
-</form>
-
+<app-add-todo-form (formSubmitted)="addTodo($event)"></app-add-todo-form>
 <ul>
   <li *ngFor="let todo of todos; let i = index">
     <input type="checkbox" [checked]="todo.completed" (change)="markTodoAsComplete(todo, i)" />

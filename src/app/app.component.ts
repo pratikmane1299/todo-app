@@ -8,20 +8,18 @@ import { Todo } from './models/todo';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  todo = '';
   todos: Todo[] = [];
 
-  addTodo() {
-    if (this.todo === '') {
+  addTodo(todo: string) {
+    if (todo === '') {
       return;
     }
     const newTodo: Todo = {
       id: this.todos.length + 1,
-      text: this.todo,
+      text: todo,
       completed: false
     };
     this.todos.push(newTodo);
-    this.todo = '';
   }
 
   markTodoAsComplete(todo: Todo, index: number) {

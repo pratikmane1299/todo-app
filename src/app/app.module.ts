@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { from } from 'rxjs';
+import { AddTodoFormComponent } from './components/add-todo-form/add-todo-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddTodoFormComponent
   ],
   imports: [
     BrowserModule,
