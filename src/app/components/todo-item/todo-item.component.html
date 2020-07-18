@@ -1,0 +1,14 @@
+<input 
+  type="checkbox" 
+  [checked]="todo.completed" 
+  (change)="onTodoComplete(todo)" />
+<span 
+  [class.completed]="todo.completed" 
+  style="width: 100%;">
+  {{ todo.text }}
+</span>
+<button 
+  class="remove-todo-btn" 
+  (click)="onRemoveTodo(todo)">
+  remove todo
+</button>

@@ -2,8 +2,10 @@
 <app-add-todo-form (formSubmitted)="addTodo($event)"></app-add-todo-form>
 <ul>
   <li *ngFor="let todo of todos; let i = index">
-    <input type="checkbox" [checked]="todo.completed" (change)="markTodoAsComplete(todo, i)" />
-    <span [class.completed]="todo.completed" style="width: 100%;">{{ todo.text }}</span>
-    <button class="remove-todo-btn" (click)="removeTodo(todo)">remove todo</button>
+    <app-todo-item 
+      [todo]="todo" 
+      (markTodoAsComplete)="markTodoAsComplete(todo, i)"
+      (removeTodo)="removeTodo(todo)">
+    </app-todo-item>
   </li>
 </ul>

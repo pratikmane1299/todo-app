@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AddTodoFormComponent } from './components/add-todo-form/add-todo-form.component';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddTodoFormComponent
+    AddTodoFormComponent,
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,

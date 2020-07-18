@@ -1,0 +1,13 @@
+input[type='checkbox'] {
+    display: inline;
+    width: auto;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.remove-todo-btn {
+    display: inline-block;
+    width: auto;
+}
